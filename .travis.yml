@@ -8,6 +8,10 @@ before_install:
 scripts:
   - docker run mytest npm run test -- -- coverage
 
+language: node_js
+node_js:
+  - "12"
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
